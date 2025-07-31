@@ -6,7 +6,7 @@ services:
       context: .
     container_name: my-backend
     labels:
-      - caddy=search.wanderoffcourse.com
+      - caddy=api.marcohuber-web.site 
       - caddy.reverse_proxy={{upstreams 3000}}
     networks:
       - caddy
