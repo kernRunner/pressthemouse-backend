@@ -2,12 +2,9 @@ version: '3.8'
 
 services:
   backend:
-    image: node:20
+    build:
+      context: .
     container_name: my-backend
-    working_dir: /app
-    volumes:
-      - .:/app
     ports:
       - "3000:3000"
-    command: sh -c "npm install && node index.js"
     restart: always
