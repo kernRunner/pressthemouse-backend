@@ -5,6 +5,15 @@ services:
     build:
       context: .
     container_name: my-backend
+    labels:
+      - caddy=search.wanderoffcourse.com
+      - caddy.reverse_proxy={{upstreams 3000}}
+    networks:
+      - caddy
     ports:
       - "3000:3000"
     restart: always
+
+networks:
+  caddy:
+    external: true
