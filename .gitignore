@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv files
+.env
+.env.local
+.env.*.local
+
+# SQLite database file
+*.sqlite
+*.db
+*.db-journal
+
+# Debug output
+debug.log
+
+# IDE configs
+.vscode/
+.idea/
+
+# Docker
+docker-compose.override.yml
+
+# Others
+dist/
